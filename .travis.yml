@@ -1,0 +1,23 @@
+language: python
+sudo: required
+python:
+- '3.6'
+branches:
+  only:
+  - master
+services:
+- docker
+
+install:
+- pip install -r requirements.txt
+script: docker build -f ./deploy/Dockerfile -t deven96/rudeboyapi .
+# remove auto-deploy to google cloud to save costs
+deploy:
+- provider: script
+  script: bash ./deploy/docker_push.sh
+# - provider: gae
+#   skip_cleanup: true
+#   keyfile: client-secret.json
+#   project: imageq
+notifications:
+  slack: bisoncorps:urrq42VfAo4zJP2r6lH2dU8Y

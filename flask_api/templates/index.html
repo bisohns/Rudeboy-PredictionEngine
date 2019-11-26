@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Rudeboy API Documentation</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}" />
+    </head>
+    <body>
+        <img src="{{ url_for('static', filename='assets/point-and-shout.jpg') }}" alt="pointing and shouting person">
+        <h1>Using CURL to test the Rudeboy API</h1>
+        <p>The Rudeboy API connects to the hosted models at BigML<br>
+        Below is an example of a comment we are attempting to classify<br>
+
+        </p>
+
+        <pre>
+        <code>
+        $ curl -i -H "Content-Type: application/json" -X POST -d '{"comment": "I will find you and I will kill you"}' http://rudeboy.bisoncorps.com/predict
+        </code>
