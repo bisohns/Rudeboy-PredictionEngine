@@ -138,3 +138,6 @@ local_vars.yml
 
 #keys
 client-secret.json
+
+#vim trash
+*.swp

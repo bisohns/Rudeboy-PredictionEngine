@@ -8,5 +8,5 @@ ensemble = Ensemble('ensemble/5ddd1a3f1efc925827001f7a',
                               domain="bigml.io"))
 # To make predictions fill the desired input_data in next line.
 input_data = {}
-ret = ensemble.predict({'comment': "fuck you cunt"}, full=True)
+ret = ensemble.predict({'comment_text': "fuck you cunt"}, full=True)
 print(ret)

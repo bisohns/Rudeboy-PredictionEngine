@@ -1,3 +1,4 @@
+import os
 import flask
 from utils import get_predictions
 
@@ -7,12 +8,12 @@ app = flask.Flask(__name__, template_folder=TEMPLATE_DIR)
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return flask.render_template("index.html")
 
 @app.route("/predict", methods=['POST'])
 def predict():
     try:
-        input_data = request.json['comment']
+        input_data = flask.request.json['comment']
         preds = get_predictions(input_data)
         return flask.jsonify(preds)
     except:
