@@ -3,7 +3,7 @@ import pickle
 from bigml.ensemble import Ensemble
 from bigml.api import BigML
 
-CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+CURRENT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE_DIR = os.path.join(CURRENT_DIR, "cache")
 CACHE = os.path.join(CACHE_DIR, "emblem-dict.pkl")
 
