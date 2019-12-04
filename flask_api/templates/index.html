@@ -13,5 +13,6 @@
 
         <pre>
         <code>
-        $ curl -i -H "Content-Type: application/json" -X POST -d '{"comment": "I will find you and I will kill you"}' http://rudeboy.bisoncorps.com/predict
+        $ curl https://rudeboy.bisoncorps.com/predict -d '{"comment": "I will fucking kill you"}' -H 'Content-Type: application/json'
+        {"identity_hatred":{"prediction":"0","probability":0.9868},"insult":{"prediction":"0","probability":0.96364},"obscene":{"prediction":"0","probability":0.95807},"severe_toxicity":{"prediction":"0","probability":0.96764},"threat":{"prediction":"0","probability":0.74252},"toxicity":{"prediction":"0","probability":0.80705}}
         </code>

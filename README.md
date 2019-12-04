@@ -13,7 +13,7 @@ Categorizes toxicity levels in a sentence
   - [Getting Started](#getting-started)
     - [Installation](#installation)
   - [Running Locally](#running-locally)
-
+  - [Deployed Version](#deployed-version)
 
 ## Getting Started
 
@@ -40,6 +40,7 @@ Activate virtual environment. All project work should be done in virtualenvs and
     pipenv install
 ```
 
+
 ## Running Locally
 
 - With flask dev server
@@ -62,3 +63,7 @@ Activate virtual environment. All project work should be done in virtualenvs and
 
 Upon running image, docker container port is bound to [localhost](http://localhost:8008)
 
+
+## Deployed Version
+
+Make use of the deployed version visit https://rudeboy.bisoncorps.com
