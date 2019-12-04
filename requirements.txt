@@ -1,4 +1,4 @@
-bigml==4.25.2
+bigml==4.26.0
 bigml-chronos==0.3.8
 certifi==2019.9.11
 chardet==3.0.4
