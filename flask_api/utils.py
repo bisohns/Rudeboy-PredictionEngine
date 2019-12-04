@@ -2,6 +2,8 @@ import os
 import pickle
 from bigml.ensemble import Ensemble
 from bigml.api import BigML
+import sys
+sys.setrecursionlimit(10000)
 
 CURRENT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE_DIR = os.path.join(CURRENT_DIR, "cache")
