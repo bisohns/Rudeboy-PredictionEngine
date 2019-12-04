@@ -1,6 +1,10 @@
 # Rudeboy-API
 
-Categorizes toxicity levels in a sentence
+Categorizes toxicity levels in a sentence 
+Dataset obtained from this [Kaggle competition](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge)
+Models trained using [BigMl](https://bigml.com/accounts/register/recommendedby/deven96)
+
+![Icon](flask_api/static/assets/point-and-shout.jpg)
 
 [![Python flask](https://img.shields.io/badge/Python-flask-blue.svg)](https://http://flask.pocoo.org/)
 
